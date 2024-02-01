@@ -1,0 +1,12 @@
+/* Implement login component styles */
+div {
+    max-width: 400px;
+    margin: auto;
+ }
+ 
+ form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ 

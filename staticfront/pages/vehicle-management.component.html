@@ -1,0 +1,23 @@
+<div>
+    <h2>Vehicle Management</h2>
+ 
+    <!-- Implement vehicle listing -->
+    <div *ngFor="let vehicle of vehicles">
+       {{ vehicle.name }} - {{ vehicle.model }}
+       <button (click)="updateVehicle(vehicle.id)">Update</button>
+       <button (click)="deleteVehicle(vehicle.id)">Delete</button>
+    </div>
+ 
+    <!-- Implement vehicle adding form -->
+    <h3>Add New Vehicle</h3>
+    <form (ngSubmit)="addVehicle(newVehicle)">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" [(ngModel)]="newVehicle.name" required>
+ 
+       <label for="model">Model:</label>
+       <input type="text" id="model" name="model" [(ngModel)]="newVehicle.model" required>
+ 
+       <button type="submit">Add Vehicle</button>
+    </form>
+ </div>
+ 

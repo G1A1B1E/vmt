@@ -1,0 +1,16 @@
+/* Implement vehicle management component styles */
+div {
+    max-width: 600px;
+    margin: auto;
+ }
+ 
+ form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ 
+ div button {
+    margin-left: 10px;
+ }
+ 
